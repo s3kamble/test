@@ -10,7 +10,7 @@
 <body  >
 <div class="container">
 	<div class="row">
-		<div class="col-lg-12"
+		<div class="col-lg-12">
 <h5 class="heading"> Click the refresh button to start !</h5> 
 <h2>What next?</h2>
 <p id="display1"></p>
@@ -28,7 +28,8 @@
 <script>
 	function changeFood() 
 	{
-		$('.heading').fadeOut();
+		$('.heading').fadeOut(1000);
+		$('.heading').remove();
 		var food1 = ["Chilli", "Kheema", "Nachos" ,"Paneer","Mushroom","Cheese","Fenugreek","Schezwan","Mayonaise","Chocolate","Butter","Tandoori","Vanilla","Oreo","Chole","Bhuna","Kofta","MoMos","Ketchup","Corn","Cornflakes","Chocos","Dal","Maggie","vada"];
         var a=Math.floor(Math.random() * 25);
         document.getElementById("display1").innerHTML = "<input type='text' id='display1' value='" + food1[a] + "' disabled>";
